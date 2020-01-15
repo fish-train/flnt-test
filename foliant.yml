@@ -1,4 +1,4 @@
-title: flnt
+title: flnt-test
 
 chapters:
   - index.md
@@ -16,13 +16,13 @@ backend_config:
     #     params:
     #         pdf_engine: wkhtmltopdf
     
-    mdtopdf:
-        mdtopdf_path: md-to-pdf
+    # mdtopdf:
+    #    mdtopdf_path: md-to-pdf
 
 
     mkdocs:
         mkdocs_path: mkdocs
-        slug: flnt
+        slug: flnt-test
         use_title: true
         use_chapters: true
         use_headings: true

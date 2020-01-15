@@ -16,11 +16,12 @@ def delete_log(foldername):
 
 # Сборка сайта
 def make_site():
-	cmd = "foliant make site & cd flnt.mkdocs & python -m http.server"		# Собрать сайт , перейти в папку сайта, запустить веб-сервер
+	cmd = "foliant make site & cd flnt-test.mkdocs & python -m http.server"		# Собрать сайт , перейти в папку сайта, запустить веб-сервер
 	subprocess.Popen(cmd, shell = True)									    # Выполнить команду CMD
 
 make_site()																	# Собрать сайт
-dirname = 'C:/flnt'															# Указать рабочую папку
+
+dirname = 'D:/flnt-test'													# Указать рабочую папку
 delete_log(dirname)															# Удалить лог-файл предыдущей сборки
 
 # Попробовать:
