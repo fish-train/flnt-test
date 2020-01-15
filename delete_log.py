@@ -17,5 +17,5 @@ def delete_log(foldername):
                 if not os.path.exists(fullname):
                     print("Файл", f,"удален")
 
-dirname = 'C:/flnt'
+dirname = 'D:/flnt-test'
 delete_log(dirname)
