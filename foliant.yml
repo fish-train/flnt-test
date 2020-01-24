@@ -2,9 +2,10 @@ title: flnt-test
 
 chapters:
   - index.md
-  - Руководство пользователя:
-      - search.md
-      - tables.md
+  - start.md
+  - docs.md
+  - git.md
+  - publish.md
 
 backend_config:
     # pandoc:
@@ -28,7 +29,7 @@ backend_config:
         use_headings: true
         default_subsection_title: Expand
         mkdocs.yml:
-            site_name: Premiership News
+            site_name: Documentation
             theme:
                 name: 'material'
                 logo: img/logo.png
@@ -36,3 +37,7 @@ backend_config:
             extra:
                 search:
                     language: 'en, ru'
+            markdown_extensions:
+                - toc:
+                    #title:
+                    toc_depth: '2-6'
