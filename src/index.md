@@ -1,34 +1,40 @@
-# Welcome to flnt
+# Задача
 
-## Premier League
+1. Создать проект **Foliant** для документации на языке разметки **Markdown**.
+2. Генерировать документацию в формате HTML.
+3. Хранить исходники в **Git**.
+4. Публиковать сайт с документацией на **Github**.
 
-### Liverpool
+### Задачи на развитие
 
-You will never walk alone!
+- [ ] Описать генерацию PDF и DOCX.
+- [ ] Генерировать документы по ГОСТу с помощью Gostdown.
+- [ ] Изменить оформление сайта.
+- [ ] Создать задачу в Jenkins для автоматической публикации документации при Pull Request.
+- [ ] Проверять тексты с помощью линтера.
+- [ ] Описать текущие настройки MkDocs.
 
-### Man City
+## Используемые компоненты
 
-**Pep Guardiola's** @ManCity set the best-ever record after 10 matches of a #PL season.
+Для разработки документации используются компоненты:
 
-### Leicester
+- **Foliant** – инструмент для разработки документации. Позволяет создавать сайты и документы в форматах PDF и DOCX из Markdown-файлов;
+- **Python** – язык программирования, на котором разработан Foliant;
+- **Pandoc** – инструмент для конвертации файлов. Используется для создания документов в форматах PDF и DOCX;
+- **MiKTeX** – открытый дистрибутив TeX для Windows. Используется для астройки и верстки PDF-документов;
+- **Mkdocs** – генератор статических сайтов;
+- **MdToPdf** – альтернативная библиотека для создания PDF-документов.
 
-Your NEW #FPL 2019/20 top points scorer?
+## Процесс разработки
 
-It’s...... **Jamie Vardy**
+Процесс разработки документации состоит из следующих этапов:
 
-![](https://pbs.twimg.com/media/EH-SdQPW4AIrSsV.jpg "")
+1. [Подготовка к работе](start.md).
+1. [Разработка текстов](docs.md).
+1. [Работа с Git](git.md).
+1. [Настройка шаблонов сборки, сборка и публикация документации](publish.md).
 
-### Team of the week
+## Полезные ссылки
 
-It's **@alanshearer's** Team of the Week
-
-Thoughts on his selections?
-
-![Image](https://pbs.twimg.com/media/EH-GfehXkAE5uYn.jpg "Image")
-
-## Привет
-Наконец-то работает кириллица!
-
-![Image2](img/logo.png)
-
-![Image](img/3.png)
+- [Работа с Git через консоль](https://htmlacademy.ru/blog/useful/git/git-console)
+- [markdownlint demo](https://dlaa.me/markdownlint/)

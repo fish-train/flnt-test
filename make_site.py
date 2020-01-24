@@ -16,7 +16,7 @@ def delete_log(foldername):
 
 # Сборка сайта
 def make_site():
-	cmd = "foliant make site & cd flnt-test.mkdocs & python -m http.server"		# Собрать сайт , перейти в папку сайта, запустить веб-сервер
+	cmd = "foliant make site --with mkdocs & cd flnt-test.mkdocs & python -m http.server"		# Собрать сайт , перейти в папку сайта, запустить веб-сервер
 	subprocess.Popen(cmd, shell = True)									    # Выполнить команду CMD
 
 make_site()																	# Собрать сайт
