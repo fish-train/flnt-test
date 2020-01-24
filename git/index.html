@@ -36,7 +36,7 @@
     
     
       
-        <title>Таблицы - Documentation</title>
+        <title>Работа с Git - Documentation</title>
       
     
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Таблицы
+                Работа с Git
               
             </span>
           
@@ -204,11 +204,59 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../git/" title="Работа с Git" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Работа с Git
+      </label>
+    
+    <a href="./" title="Работа с Git" class="md-nav__link md-nav__link--active">
       Работа с Git
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Содержание</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Создание ветки
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    Отправка изменений в Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Актуализация локального репозитория
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -244,21 +292,21 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    Простая таблица
+    Создание ветки
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#leading-and-tailing-pipe" class="md-nav__link">
-    leading and tailing pipe
+  <a href="#github" class="md-nav__link">
+    Отправка изменений в Github
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#specify-alignment" class="md-nav__link">
-    Specify alignment
+  <a href="#_2" class="md-nav__link">
+    Актуализация локального репозитория
   </a>
   
 </li>
@@ -280,73 +328,31 @@
               
                 
                 
-                <h1>Таблицы</h1>
-<h2 id="_1">Простая таблица</h2>
-<table>
-<thead>
-<tr>
-<th>First Header</th>
-<th>Second Header</th>
-<th>Third Header</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-<td>Content Cell</td>
-</tr>
-<tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-<td>Content Cell</td>
-</tr>
-</tbody>
-</table>
-<h2 id="leading-and-tailing-pipe">leading and tailing pipe</h2>
-<table>
-<thead>
-<tr>
-<th>First Header</th>
-<th>Second Header</th>
-<th>Third Header</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-<td>Content Cell</td>
-</tr>
-<tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-<td>Content Cell</td>
-</tr>
-</tbody>
-</table>
-<h2 id="specify-alignment">Specify alignment</h2>
-<table>
-<thead>
-<tr>
-<th align="left">First Header</th>
-<th align="center">Second Header</th>
-<th align="right">Third Header</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Left</td>
-<td align="center">Center</td>
-<td align="right">Right</td>
-</tr>
-<tr>
-<td align="left">Left</td>
-<td align="center">Center</td>
-<td align="right">Right</td>
-</tr>
-</tbody>
-</table>
+                <h1>Работа с Git</h1>
+<h2 id="_1">Создание ветки</h2>
+<ol>
+<li>Откройте терминал и выполните команду: <code>git branch</code>. Появится список веток, выделена текущая ветка.</li>
+<li>Если текущая ветка – <strong>master</strong>, создайте ветку: <code>git checkout -b имя-новой-ветки</code>.
+    Если текущая ветка – не <strong>master</strong>, переключитесь в основную ветку: <code>git checkout master</code> и создайте новую.</li>
+</ol>
+<h2 id="github">Отправка изменений в Github</h2>
+<ol>
+<li>Сохраните изменения всех файлов: <code>git add -A</code>.</li>
+<li>Зафиксируйте изменения: <code>git commit -m "ваше сообщение"</code>.</li>
+<li>Отправьте изменений в репозиторий: <code>git push origin название-текущей-ветки</code>.</li>
+<li>Откройте репозиторий в Github.</li>
+<li>Перейдите на закладку <strong>Pull requests</strong> и нажмите на кнопку <strong>New pull request</strong>.</li>
+<li>Чтобы принять пуллреквест, нажмите на кнопку <strong>Create Pull Request</strong>.</li>
+<li>Чтобы слить изменения в ветку <strong>master</strong>, нажмите на кнопку <strong>Merge pull request</strong>.</li>
+<li>Нажмите на кнопку <strong>Confirm merge</strong>.</li>
+</ol>
+<h2 id="_2">Актуализация локального репозитория</h2>
+<ol>
+<li>В локальном репозитории перейдите в ветку <strong>master</strong>: <code>git checkout master</code>.</li>
+<li>Загрузите изменения из ветки <strong>master</strong> мастер-репозитория: <code>git pull my-project master</code>.</li>
+<li>Отправьте изменения из своей ветки <strong>master</strong> в ваш форк на GitHub: <code>git push origin master</code>.</li>
+</ol>
+<p>Теперь форк и оригинальный репозиторий находятся в актуальном состоянии.</p>
                 
                   
                 
@@ -363,6 +369,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../docs/" title="Разработка текстов" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Назад
+                </span>
+                Разработка текстов
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../publish/" title="Сборка и публикация документации" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Вперед
+                </span>
+                Сборка и публикация документации
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
