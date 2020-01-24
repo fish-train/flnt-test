@@ -22,9 +22,7 @@
 1. В локальном репозитории перейдите в ветку **master**: ```git checkout master```.
 <<<<<<< HEAD
 2. Загрузите изменения из ветки **master** мастер-репозитория: ```git pull my-project master```.
-=======
 2. Pfuhepbnt изменения из ветки **master** мастер-репозитория: ```git pull my-project master```.
->>>>>>> c8869e84de2edc5ef48365f8c362beb6f3be1cdf
 3. Отправьте изменения из своей ветки **master** в ваш форк на GitHub: ```git push origin master```.
 
 Теперь форк и оригинальный репозиторий находятся в актуальном состоянии.
