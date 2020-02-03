@@ -8,18 +8,26 @@ chapters:
   - publish.md
 
 backend_config:
-    # pandoc:
-    #     template: !path docs.tex
-    #     vars:
-    #         title: clean-foliant
-    #         subtitle: Manual
-    #         logo: img/logo.png
-    #     params:
-    #         pdf_engine: wkhtmltopdf
+    pandoc:
+        #template: !path docs.tex
+        vars:
+            title: clean-foliant
+            subtitle: Manual
+            logo: img/logo.png
+        params:
+            pdf_engine: xelatex
+            listings: true
+            number_sections: true
     
-    # mdtopdf:
-    #    mdtopdf_path: md-to-pdf
-
+    mdtopdf:
+        mdtopdf_path: md-to-pdf
+        options:
+            stylesheet: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css
+            body_class: markdown-body
+            css: |-
+                .page-break { page-break-after: always; }
+                .markdown-body { font-size: 11px; }
+                .markdown-body pre > code { white-space: pre-wrap; }
 
     mkdocs:
         mkdocs_path: mkdocs
@@ -29,7 +37,7 @@ backend_config:
         use_headings: true
         default_subsection_title: Expand
         mkdocs.yml:
-            site_name: Documentation
+            site_name: Docs as Code. Учебный проект
             theme:
                 name: 'material'
                 logo: img/logo.png

@@ -36,7 +36,7 @@
     
     
       
-        <title>Подготовка к работе - Documentation</title>
+        <title>Подготовка к работе - Docs as Code. Учебный проект</title>
       
     
     
@@ -84,7 +84,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="Documentation" class="md-header-nav__button md-logo">
+        <a href=".." title="Docs as Code. Учебный проект" class="md-header-nav__button md-logo">
           
             <img src="../img/logo.png" width="24" height="24">
           
@@ -97,7 +97,7 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              Documentation
+              Docs as Code. Учебный проект
             </span>
             <span class="md-header-nav__topic">
               
@@ -154,12 +154,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href=".." title="Documentation" class="md-nav__button md-logo">
+    <a href=".." title="Docs as Code. Учебный проект" class="md-nav__button md-logo">
       
         <img src="../img/logo.png" width="48" height="48">
       
     </a>
-    Documentation
+    Docs as Code. Учебный проект
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -170,8 +170,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Задача" class="md-nav__link">
-      Задача
+    <a href=".." title="Цели и задачи проекта" class="md-nav__link">
+      Цели и задачи проекта
     </a>
   </li>
 
@@ -382,7 +382,7 @@
 </div>
 <h2 id="git">Установка Git</h2>
 <ol>
-<li>Скачайте файл инсталлятора с <a href="https://git-scm.com/download/win">сайта Git</a> и запустите его.</li>
+<li>Скачайте файл инсталлятора с <a href="https://git-scm.com/download/win">сайта Git</a> и установите Git.</li>
 <li>Откройте терминал и введите команду <code>git --version</code>. Появится информация об установленной версии Git.</li>
 </ol>
 <h3 id="git_1">Настройка Git</h3>
@@ -405,31 +405,44 @@
 <li>Нажмите на кнопку <strong>Add SSH key</strong>.</li>
 </ol>
 <h2 id="foliant">Установка Foliant и необходимых компонентов</h2>
-<p>Чтобы установить Foliant и необходимые компоненты:</p>
+<p>Чтобы установить <strong>Foliant</strong> и необходимые компоненты:</p>
 <ol>
-<li>Скачайте файл инсталлятора <a href="https://www.python.org/downloads/">Python</a> и установите его.</li>
+<li>Установите <a href="https://www.python.org/downloads/">Python</a>.</li>
 <li>
-<p>Установите Foliant с помощью pip:
-    <code>$ python -m pip install foliant foliantcontrib.init</code></p>
+<p>Установите <strong>Foliant</strong> с помощью pip:</p>
+<p><code>$ python -m pip install foliant foliantcontrib.init</code></p>
 </li>
 <li>
 <p>Установите менеджер пакетов <a href="https://chocolatey.org/install">Chocolatey</a>.</p>
 </li>
-<li>Установите Pandoc:
-    <code>choco install pandoc</code></li>
-<li>Установите MkDocs:
-    <code>pip install mkdocs</code></li>
-<li>Установите <a href="https://miktex.org/download">MiKTeX</a>.</li>
-<li>установите MdToPdf:
-    <code>$ npm install -g md-to-pdf</code></li>
+<li>
+<p>Установите <strong>Pandoc</strong> с помощью Chocolatey:</p>
+<p><code>choco install pandoc</code></p>
+</li>
+<li>
+<p>Установите <strong>MkDocs</strong>:</p>
+<p><code>pip install mkdocs</code></p>
+</li>
+<li>
+<p>Установите <a href="https://miktex.org/download">MiKTeX</a>.</p>
+</li>
+<li>Установите <a href="https://nodejs.org/en/">nodejs</a>.</li>
+<li>
+<p>Установите MdToPdf с помощью npm:</p>
+<p><code>$ npm install -g md-to-pdf</code></p>
+</li>
 </ol>
 <h2 id="foliant_1">Создание проекта Foliant</h2>
 <ol>
 <li>В командной строке перейдите в папку, в которой будет создан проект <strong>Foliant</strong>.</li>
-<li>Создайте проект:
-    <code>$ foliant init</code></li>
-<li>Укажите имя проекта, например, Hello Foliant. Появится сообщение:
-    <code>Project "Hello Foliant" created in hello-foliant</code></li>
+<li>
+<p>Создайте проект:</p>
+<p><code>$ foliant init</code></p>
+</li>
+<li>
+<p>Укажите имя проекта, например, "Hello Foliant". Появится сообщение:</p>
+<p><code>Project "Hello Foliant" created in hello-foliant</code></p>
+</li>
 </ol>
 <p>Чтобы посмотреть содержимое проекта, выполните команды:</p>
 <pre><code>$ cd hello-foliant
@@ -445,18 +458,18 @@ $ tree
 1 directory, 6 files
 </code></pre>
 
-<p>Проект сдержит файлы и папки:</p>
+<p>Проект содержит файлы и папки:</p>
 <ul>
 <li><strong>docker-compose.yml</strong> и <strong>Dockerfile</strong> – файлы,  необходимые для создания проекта в Docker;</li>
 <li><strong>foliant.yml</strong> – конфигурационный файл проекта;</li>
 <li><strong>README.md</strong> – файл с информацией о проекте;</li>
 <li><strong>requirements.txt</strong> – список пакетов Python, необходимых для проекта: бэкенды и препроцессоры, темы для MkDocs и т.д.;</li>
-<li><strong>src</strong> – папка с исходными файлами проекта. По умолчанию создается файл index.xml.</li>
+<li><strong>src</strong> – папка с исходными файлами проекта. По умолчанию в папке создается файл index.xml.</li>
 </ul>
 <h2 id="_1">Создание репозитория</h2>
 <p>Чтобы создать репозитой на <a href="https://github.com/">https://github.com/</a>:</p>
 <ol>
-<li>Зрегистрируйтесь или войдите в свой аккаунт на <a href="https://github.com/">https://github.com/</a>.</li>
+<li>Зарегистрируйтесь или войдите в свой аккаунт на <a href="https://github.com/">https://github.com/</a>.</li>
 <li>
 <p>Нажмите на кнопку <strong>New</strong> в колонке <strong>Repositories</strong>. Откроется окно:</p>
 <p><img alt="44" src="../img/create-new-repo.png" /></p>
@@ -489,7 +502,7 @@ $ tree
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Задача" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Цели и задачи проекта" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -498,7 +511,7 @@ $ tree
                 <span class="md-footer-nav__direction">
                   Назад
                 </span>
-                Задача
+                Цели и задачи проекта
               </span>
             </div>
           </a>

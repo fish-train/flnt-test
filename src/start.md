@@ -4,7 +4,7 @@
 
 ## Установка Git
 
-1. Скачайте файл инсталлятора с [сайта Git](https://git-scm.com/download/win) и запустите его.
+1. Скачайте файл инсталлятора с [сайта Git](https://git-scm.com/download/win) и установите Git.
 2. Откройте терминал и введите команду `git --version`. Появится информация об установленной версии Git.
 
 ### Настройка Git
@@ -24,37 +24,47 @@
 
 ## Установка Foliant и необходимых компонентов
 
-Чтобы установить Foliant и необходимые компоненты:
+Чтобы установить **Foliant** и необходимые компоненты:
 
-1. Скачайте файл инсталлятора [Python](https://www.python.org/downloads/) и установите его.
-2. Установите Foliant с помощью pip:
+1. Установите [Python](https://www.python.org/downloads/).
+2. Установите **Foliant** с помощью pip:
+   
     ```
     $ python -m pip install foliant foliantcontrib.init
     ```
 
 3. Установите менеджер пакетов [Chocolatey](https://chocolatey.org/install).
-4. Установите Pandoc:
+4. Установите **Pandoc** с помощью Chocolatey:
+    
     ```
     choco install pandoc
     ```
-5. Установите MkDocs:
+
+5. Установите **MkDocs**:
+    
     ```
     pip install mkdocs
     ```
+
 6. Установите [MiKTeX](https://miktex.org/download).
-7. установите MdToPdf:
-    ``
+7. Установите [nodejs](https://nodejs.org/en/).
+8. Установите MdToPdf с помощью npm:
+    
+    ```
     $ npm install -g md-to-pdf
-    ``
+    ```
 
 ## Создание проекта Foliant
 
 1. В командной строке перейдите в папку, в которой будет создан проект **Foliant**.
 2. Создайте проект:
+    
     ```
     $ foliant init
     ```
-3. Укажите имя проекта, например, Hello Foliant. Появится сообщение:
+
+3. Укажите имя проекта, например, "Hello Foliant". Появится сообщение:
+    
     ```
     Project "Hello Foliant" created in hello-foliant
     ```
@@ -75,19 +85,19 @@ $ tree
 1 directory, 6 files
 ```
 
-Проект сдержит файлы и папки:
+Проект содержит файлы и папки:
 
 - **docker-compose.yml** и **Dockerfile** – файлы,  необходимые для создания проекта в Docker;
 - **foliant.yml** – конфигурационный файл проекта;
 - **README.md** – файл с информацией о проекте;
 - **requirements.txt** – список пакетов Python, необходимых для проекта: бэкенды и препроцессоры, темы для MkDocs и т.д.;
-- **src** – папка с исходными файлами проекта. По умолчанию создается файл index.xml.
+- **src** – папка с исходными файлами проекта. По умолчанию в папке создается файл index.xml.
 
 ## Создание репозитория
 
 Чтобы создать репозитой на <https://github.com/>:
 
-1. Зрегистрируйтесь или войдите в свой аккаунт на <https://github.com/>.
+1. Зарегистрируйтесь или войдите в свой аккаунт на <https://github.com/>.
 2. Нажмите на кнопку **New** в колонке **Repositories**. Откроется окно:
 
     ![44](img/create-new-repo.png)

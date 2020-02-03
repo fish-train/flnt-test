@@ -6,10 +6,10 @@
 
 Подробнее о синстаксисе см. статьи:
 
-- [Официальный сайт](https://daringfireball.net/projects/markdown/syntax);
-- [Использование языка разметки Markdown для написания документации](https://docs.microsoft.com/ru-ru/contribute/how-to-write-use-markdown);
-- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet);
-- [Python-Markdown](https://python-markdown.github.io/).
+- [Официальный сайт](https://daringfireball.net/projects/markdown/syntax)
+- [Использование языка разметки Markdown для написания документации](https://docs.microsoft.com/ru-ru/contribute/how-to-write-use-markdown)
+- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Python-Markdown](https://python-markdown.github.io/)
 
 ## Инструменты
 
