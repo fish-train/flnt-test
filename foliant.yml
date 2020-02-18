@@ -6,6 +6,7 @@ chapters:
   - docs.md
   - git.md
   - publish.md
+  - gost.md
 
 backend_config:
     pandoc:
