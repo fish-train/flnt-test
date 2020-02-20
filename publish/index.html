@@ -31,7 +31,7 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../img/keyboard.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
@@ -42,6 +42,12 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
       
     
     
@@ -63,11 +69,15 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
         
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -86,7 +96,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href=".." title="Docs as Code. Учебный проект" class="md-header-nav__button md-logo">
           
-            <img src="../img/logo.png" width="24" height="24">
+            <i class="md-icon">keyboard</i>
           
         </a>
       </div>
@@ -136,6 +146,28 @@
         
       </div>
       
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/fish-train/flnt-test/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    fish-train/flnt-test
+  </div>
+</a>
+          </div>
+        </div>
+      
     </div>
   </nav>
 </header>
@@ -156,11 +188,31 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href=".." title="Docs as Code. Учебный проект" class="md-nav__button md-logo">
       
-        <img src="../img/logo.png" width="48" height="48">
+        <i class="md-icon">keyboard</i>
       
     </a>
     Docs as Code. Учебный проект
   </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/fish-train/flnt-test/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    fish-train/flnt-test
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -184,6 +236,18 @@
   <li class="md-nav__item">
     <a href="../start/" title="Подготовка к работе" class="md-nav__link">
       Подготовка к работе
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tools/" title="Настройка инструментов" class="md-nav__link">
+      Настройка инструментов
     </a>
   </li>
 
@@ -433,27 +497,31 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/fish-train/flnt-test/edit/master/src/publish.md" title="Редактировать страницу" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1>Сборка и публикация документации</h1>
-<h2 id="html">HTML</h2>
-<h3 id="mkdocs">Выбор и настройка шаблона MkDocs</h3>
+<h2 id="html">HTML<a class="headerlink" href="#html" title="Permanent link">&para;</a></h2>
+<h3 id="mkdocs">Выбор и настройка шаблона MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
 <p>По умолчанию проект <strong>Foliant</strong> конвертируется в HTML с помощью шаблона <strong>mkdocs</strong>.</p>
 <p>Чтобы сменить шаблон:</p>
 <ol>
-<li>Выберите шаблон на странице <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">MkDocs Themes</a>.</li>
+<li>
+<p>Выберите шаблон на странице <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">MkDocs Themes</a>.</p>
+</li>
 <li>
 <p>Установите шаблон. Например, шаблон <strong>Materials</strong>:</p>
 <p><code>pip install mkdocs-material</code></p>
 </li>
 <li>
 <p>Откройте конфигурационный файл <strong>foliant.yml</strong> и добавьте строки:</p>
-<p><code>theme:
-      name: 'material'</code></p>
+<p><code>theme:  
+  name: 'material'</code></p>
 </li>
 </ol>
 <p>Шаблон настраивается в файле <strong>foliant.yml</strong>. Описание параметров см. в документации для конкретного шаблона. Например, для шаблона <strong>Materials</strong> см. статью <a href="https://squidfunk.github.io/mkdocs-material/getting-started/#configuration">Getting Started</a>.</p>
 <p>При необходимости можно создать собственный шаблон. Подробнее см. статью <a href="https://www.mkdocs.org/user-guide/custom-themes/">Custom themes</a>.</p>
-<h3 id="_1">Локальная сборка сайта</h3>
+<h3 id="_1">Локальная сборка сайта<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>Чтобы локально собрать сайт:</p>
 <ol>
 <li>
@@ -473,7 +541,7 @@
 <p>В браузере откройте страницу: <a href="http://localhost:8000/">http://localhost:8000/</a>.</p>
 </li>
 </ol>
-<h3 id="github">Публикация на GitHub</h3>
+<h3 id="github">Публикация на GitHub<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
 <p>Чтобы опубликовать сайт на GitHub:</p>
 <ol>
 <li>Откройте настройки репозитория и перейдите в раздел <strong>Danger Zone</strong>.</li>
@@ -487,24 +555,26 @@
 </li>
 </ol>
 <p><code>foliant make ghp -p \my-project</code></p>
-<h2 id="pdf">PDF</h2>
-<h3 id="md-to-pdf">md-to-pdf</h3>
+<h2 id="pdf">PDF<a class="headerlink" href="#pdf" title="Permanent link">&para;</a></h2>
+<h3 id="md-to-pdf">md-to-pdf<a class="headerlink" href="#md-to-pdf" title="Permanent link">&para;</a></h3>
 <p>Библиотека <a href="https://github.com/simonhaenisch/md-to-pdf">md-to-pdf</a> генерирует PDF-файлы, которые можно настроить с помощью CSS и <a href="https://github.com/highlightjs/highlight.js">highlight.js</a>.</p>
 <p>Чтобы создать PDF-файл, выполните команду:</p>
-<pre><code>foliant make pdf --with mdtopdf
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">foliant</span> <span class="n">make</span> <span class="n">pdf</span> <span class="c1">--with mdtopdf</span>
+</pre></div>
 
-<h3 id="pandoc">Pandoc</h3>
+
+<h3 id="pandoc">Pandoc<a class="headerlink" href="#pandoc" title="Permanent link">&para;</a></h3>
 <p><a href="https://pandoc.org/">Pandoc</a> — универсальная утилита для работы с текстовыми форматами.</p>
 <p>Чтобы создать PDF-файл, выполните команду:</p>
-<pre><code>foliant make docx -p \my-project --with pandoc
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">foliant</span> <span class="n">make</span> <span class="n">pdf</span> <span class="o">-</span><span class="n">p</span> <span class="err">\</span><span class="n">my</span><span class="o">-</span><span class="n">project</span> <span class="c1">--with pandoc</span>
+</pre></div>
 
-<h2 id="docx">DOCX</h2>
+
+<h2 id="docx">DOCX<a class="headerlink" href="#docx" title="Permanent link">&para;</a></h2>
 <p>DOCX-файлы создаются с помощью Pandoc.</p>
 <p>Чтобы создать DOCX-файл, выполните команду:</p>
-<pre><code>foliant make docx -p my-project
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">foliant</span> <span class="n">make</span> <span class="n">docx</span> <span class="o">-</span><span class="n">p</span> <span class="n">my</span><span class="o">-</span><span class="n">project</span>
+</pre></div>
                 
                   
                 
