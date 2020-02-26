@@ -9,6 +9,7 @@
 Чтобы сменить шаблон:
 
 1. Выберите шаблон на странице [MkDocs Themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes).
+
 2. Установите шаблон. Например, шаблон **Materials**:
 
     ```
@@ -18,8 +19,8 @@
 3. Откройте конфигурационный файл **foliant.yml** и добавьте строки:
 
     ```
-    theme:
-          name: 'material'
+    theme:  
+      name: 'material'   
     ```
 
 Шаблон настраивается в файле **foliant.yml**. Описание параметров см. в документации для конкретного шаблона. Например, для шаблона **Materials** см. статью [Getting Started](https://squidfunk.github.io/mkdocs-material/getting-started/#configuration).
@@ -86,7 +87,7 @@ foliant make pdf --with mdtopdf
 
 Чтобы создать PDF-файл, выполните команду:
 ```
-foliant make docx -p \my-project --with pandoc
+foliant make pdf -p \my-project --with pandoc
 ```
 
 ## DOCX

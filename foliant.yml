@@ -3,10 +3,12 @@ title: flnt-test
 chapters:
   - index.md
   - start.md
+  - tools.md
   - docs.md
   - git.md
   - publish.md
   - gost.md
+  - swagger.md
 
 backend_config:
     pandoc:
@@ -38,11 +40,19 @@ backend_config:
         use_headings: true
         default_subsection_title: Expand
         mkdocs.yml:
+            repo_name: fish-train/flnt-test
+            repo_url: https://github.com/fish-train/flnt-test
+            edit_uri: edit/master/src/
             site_name: Docs as Code. Учебный проект
             theme:
                 name: 'material'
-                logo: img/logo.png
+                logo:
+                    icon: 'keyboard'
+                favicon: img/keyboard.png
                 language: 'ru'
+                palette:
+                    primary: 'black'
+                    accent: 'indigo'
             extra:
                 search:
                     language: 'en, ru'
@@ -50,3 +60,9 @@ backend_config:
                 - toc:
                     #title:
                     toc_depth: '2-6'
+                    permalink: true
+                - admonition
+                - codehilite
+                - pymdownx.tasklist:
+                    custom_checkbox: true
+                - pymdownx.details
