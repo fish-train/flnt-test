@@ -47,7 +47,7 @@
       
         
         
-        <meta name="theme-color" content="#3f51b5">
+        <meta name="theme-color" content="">
       
     
     
@@ -71,7 +71,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -334,6 +334,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../swagger/" title="Описание API" class="md-nav__link">
+      Описание API
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -421,13 +433,13 @@
 <p><strong>mkdocs_path</strong>. Путь к файлу mkdocs.exe. По умолчанию путь к исполняемому файлу содержится в переменной окружения <strong>PATH</strong>.</p>
 <p><strong>slug</strong>. Название папки без наименования проекта, в которую локально выгружается сайт. Например, если параметр имеет значение «mkdocs», то имя папки: &lt;название проекта&gt;.mkdocs.</p>
 <p><strong>use_title</strong>. Если параметр имеет значение <strong>true</strong>, то для заголовка сайта используется значение параметра <strong>site_name</strong>. Если <strong>false</strong>, укажите заголовок сайта вручную, иначе MkDocs не сможет создать сайт. Значение по умолчанию <strong>true</strong>. </p>
-<p><strong>use_chapters</strong>. </p>
-<p><strong>use_headings</strong>.</p>
+<p><strong>use_chapters</strong>. Если параметр имеет значение <strong>true</strong>, то значения <strong>chapters</strong> из foliant.yml используется как значения <strong>pages</strong> в mkdocs.yml.</p>
+<p><strong>use_headings</strong>. </p>
 <p><strong>default_subsection_title</strong>. </p>
-<p><strong>mkdocs.yml</strong>.</p>
+<p><strong>mkdocs.yml</strong>. Параметры из <a href="https://www.mkdocs.org/user-guide/configuration/">mkdocs.yml</a>:</p>
 <ul>
 <li>
-<p><strong>repo_name</strong>. </p>
+<p><strong>repo_name</strong>. Логин пользователя и название репозитория в Git. Например, <code>fish-train/flnt-test</code>.</p>
 </li>
 <li>
 <p><strong>repo_url</strong>. </p>
