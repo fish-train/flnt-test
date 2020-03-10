@@ -21,8 +21,9 @@
     - [ ] Найти инструмент для условий **IF PDF** - см. Flags.
     - [ ] Создать скрипт, который добавляет структуру проекта **Foliant** в файл **build-demo-espd.bat** GOSTdown.
     - [ ] Описать создание сниппетов;
-    - [ ] Написать про баг с поиском: не учитываются окончания слов.
-    - [ ] [Интегрировать](https://github.com/allevo/mkdocs-swagger-plugin) Swagger.
+    - [x] Написать про баг с поиском: не учитываются окончания слов.
+    - [x] [Интегрировать](https://github.com/allevo/mkdocs-swagger-plugin) Swagger.
+    - [ ] Настроить [gitignore](https://git-scm.com/docs/gitignore).
 
 ## Используемые инструменты
 

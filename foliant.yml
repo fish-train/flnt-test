@@ -66,3 +66,8 @@ backend_config:
                 - pymdownx.tasklist:
                     custom_checkbox: true
                 - pymdownx.details
+            extra_css:
+                - css/swagger-ui.css
+            extra_javascript:
+                - js/swagger-ui-bundle.js
+                - js/swagger-ui-standalone-preset.js
