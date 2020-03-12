@@ -50,8 +50,9 @@
 window.onload = function() {
   // Build a system
   const ui = SwaggerUIBundle({
-    url: "/openapi_3.0.2.yaml",
-    //url: "http://petstore.swagger.io/v2/swagger.json",
+    url: "https://petstore.swagger.io/v2/swagger.json",
+    //url: "../src/openapi_3.0.2.yaml",
+    //url: "/openapi_3.0.2.yaml",
     dom_id: '#swagger-ui',
     defaultModelsExpandDepth: -1,
     docExpansion: "list",
@@ -270,8 +271,9 @@ button.btn.try-out__btn {
 window.onload = function() {
   // Build a system
   const ui = SwaggerUIBundle({
-    url: "/openapi_3.0.2.yaml",
-    //url: "http://petstore.swagger.io/v2/swagger.json",
+    url: "https://petstore.swagger.io/v2/swagger.json",
+    //url: "../src/openapi_3.0.2.yaml",
+    //url: "/openapi_3.0.2.yaml",
     dom_id: '#swagger-ui',
     defaultModelsExpandDepth: -1,
     docExpansion: "list",
