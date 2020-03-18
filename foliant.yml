@@ -14,6 +14,8 @@ chapters:
 preprocessors:
     - plantuml:
         plantuml_path: D:\plantuml\plantuml.jar
+        params:
+            config: !path plantuml.cfg
 
 backend_config:
     pandoc:

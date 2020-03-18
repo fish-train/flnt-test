@@ -24,7 +24,8 @@
     - [x] Написать про баг с поиском: не учитываются окончания слов.
     - [x] [Интегрировать](https://github.com/allevo/mkdocs-swagger-plugin) Swagger.
     - [ ] Настроить [gitignore](https://git-scm.com/docs/gitignore).
-    - [ ] PlantUML.
+    - [x] Нарисовать диаграмму в PlantUML.
+    - [ ] Настроить ElasticSearch.
 
 ## Используемые инструменты
 
@@ -52,3 +53,4 @@
 - [Работа с Git через консоль](https://htmlacademy.ru/blog/useful/git/git-console)
 - [markdownlint demo](https://dlaa.me/markdownlint/)
 - [GOSTdown](https://gitlab.iaaras.ru/iaaras/gostdown)
+- [PlantUML — все, что нужно бизнес-аналитику для создания диаграмм в программной документации](https://habr.com/ru/post/416077/)
