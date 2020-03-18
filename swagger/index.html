@@ -348,6 +348,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../uml/" title="UML-диаграммы в PlantUML" class="md-nav__link">
+      UML-диаграммы в PlantUML
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -442,9 +454,9 @@ extra_javascript:
 <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="c1">// Build a system</span>
   <span class="kr">const</span> <span class="nx">ui</span> <span class="o">=</span> <span class="nx">SwaggerUIBundle</span><span class="p">({</span>
-    <span class="nx">url</span><span class="o">:</span> <span class="s2">&quot;https://github.com/fish-train/flnt-test/blob/gh-pages/openapi_3.0.2.yaml&quot;</span><span class="p">,</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s2">&quot;https://petstore.swagger.io/v2/swagger.json&quot;</span><span class="p">,</span>
+    <span class="c1">//url: &quot;../src/openapi_3.0.2.yaml&quot;,</span>
     <span class="c1">//url: &quot;/openapi_3.0.2.yaml&quot;,</span>
-    <span class="c1">//url: &quot;http://petstore.swagger.io/v2/swagger.json&quot;,</span>
     <span class="nx">dom_id</span><span class="o">:</span> <span class="s1">&#39;#swagger-ui&#39;</span><span class="p">,</span>
     <span class="nx">defaultModelsExpandDepth</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>
     <span class="nx">docExpansion</span><span class="o">:</span> <span class="s2">&quot;list&quot;</span><span class="p">,</span>
@@ -666,6 +678,7 @@ window.onload = function() {
   const ui = SwaggerUIBundle({
     url: "https://petstore.swagger.io/v2/swagger.json",
     //url: "../src/openapi_3.0.2.yaml",
+    //url: "/openapi_3.0.2.yaml",
     dom_id: '#swagger-ui',
     defaultModelsExpandDepth: -1,
     docExpansion: "list",
@@ -886,6 +899,20 @@ button.btn.try-out__btn {
             </div>
           </a>
         
+        
+          <a href="../uml/" title="UML-диаграммы в PlantUML" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Вперед
+                </span>
+                UML-диаграммы в PlantUML
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
