@@ -9,6 +9,11 @@ chapters:
   - publish.md
   - gost.md
   - swagger.md
+  - uml.md
+
+preprocessors:
+    - plantuml:
+        plantuml_path: D:\plantuml\plantuml.jar
 
 backend_config:
     pandoc:
@@ -44,6 +49,11 @@ backend_config:
             repo_url: https://github.com/fish-train/flnt-test
             edit_uri: edit/master/src/
             site_name: Docs as Code. Учебный проект
+            
+            extra:
+                search:
+                    language: 'en, ru'
+            
             theme:
                 name: 'material'
                 logo:
@@ -53,9 +63,7 @@ backend_config:
                 palette:
                     primary: 'black'
                     accent: 'indigo'
-            extra:
-                search:
-                    language: 'en, ru'
+            
             markdown_extensions:
                 - toc:
                     #title:
@@ -66,6 +74,7 @@ backend_config:
                 - pymdownx.tasklist:
                     custom_checkbox: true
                 - pymdownx.details
+            
             extra_css:
                 - css/swagger-ui.css
             extra_javascript:

@@ -24,6 +24,7 @@
     - [x] Написать про баг с поиском: не учитываются окончания слов.
     - [x] [Интегрировать](https://github.com/allevo/mkdocs-swagger-plugin) Swagger.
     - [ ] Настроить [gitignore](https://git-scm.com/docs/gitignore).
+    - [ ] PlantUML.
 
 ## Используемые инструменты
 
