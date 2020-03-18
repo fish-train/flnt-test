@@ -451,14 +451,18 @@
 <li>Установите <a href="https://plantuml.com/ru/graphviz-dot">Graphviz</a>.</li>
 <li>Создайте переменную среды <code>GRAPHVIZ_DOT</code> и укажите в ее значении путь до файла dot.exe. Например, C:\Program Files (x86)\Graphviz2.38\bin\dot.exe.</li>
 <li>Скачайте файл <a href="http://sourceforge.net/projects/plantuml/files/plantuml.jar/download">plantuml.jar</a>.</li>
+<li>В корне проекта создайте файл plantuml.cfg и добавьте настройки отображения диаграмм. Подробнее см. в статье <a href="https://plantuml.com/ru/skinparam">Skinparam command</a>.</li>
 <li>Установите препроцессор для Foliant: <code>pip install foliantcontrib.plantuml</code></li>
 <li>В файле foliant.yml  добавьте <code>plantuml</code> в раздел препроцессоров.</li>
 <li>Добавьте параметр <code>plantuml_path</code> и укажите путь к файлу plantuml.jar. Например, D:\plantuml\plantuml.jar.</li>
+<li>Добавьте параметры <code>params</code> и <code>config</code>.</li>
+<li>В параметре <code>config</code> укажите путь до  файла plantuml.cfg: !path plantuml.cfg.</li>
 </ol>
 <p>Подробнее об использовании PlantUML в Foliant см. статью <a href="https://foliant-docs.github.io/docs/preprocessors/plantuml/#usage">Plantuml</a>.</p>
+<p>Настройки отображения диаграмм см. в </p>
 <h2 id="_1">Примеры диаграмм<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <h3 id="_2">Диаграмма последовательности<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="../_img_14e3b60c-68f2-11ea-9463-28d244ebc1aa/8015e70b09f41099506451ff4e047f94_14e4c782-68f2-11ea-858d-28d244ebc1aa.png" /></p>
+<p><img alt="" src="../_img_793040ac-6917-11ea-8bd1-28d244ebc1aa/25fa30831b66f15832c63e3d51a0a7fa_7931a040-6917-11ea-9704-28d244ebc1aa.png" /></p>
                 
                   
                 
