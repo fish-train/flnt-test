@@ -13,7 +13,9 @@
 
 ## Инструменты
 
+<anchor>editor_id1</anchor>
 Для работы с Markdown можно использовать любой текстовый редактор.
+<anchor>editor_id2</anchor>
 
 При создание этого проекта использовался редактор **Sublime Text** с плагином **MarkdownEditing**.
 

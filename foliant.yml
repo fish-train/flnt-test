@@ -10,12 +10,18 @@ chapters:
   - gost.md
   - swagger.md
   - uml.md
+  - snippet.md
 
 preprocessors:
     - plantuml:
         plantuml_path: D:\plantuml\plantuml.jar
         params:
             config: !path plantuml.cfg
+    - flags:
+        flags:
+            - targets:pdf
+            - targets:site
+    - includes
 
 backend_config:
     pandoc:
