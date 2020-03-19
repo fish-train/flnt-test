@@ -1,6 +1,6 @@
 # Подготовка к работе
 
-<if targets="site">
+<if targets="site, ghp" kind="any">
 [TOC]
 </if>
 

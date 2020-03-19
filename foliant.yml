@@ -21,6 +21,7 @@ preprocessors:
         flags:
             - targets:pdf
             - targets:site
+            - targets:ghp
     - includes
 
 backend_config:
