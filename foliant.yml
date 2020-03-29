@@ -12,6 +12,7 @@ chapters:
   - uml.md
   - snippet.md
   - if.md
+  - docker.md
 
 preprocessors:
     - plantuml:

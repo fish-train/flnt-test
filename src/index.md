@@ -26,6 +26,7 @@
     - [x] [Интегрировать](https://github.com/allevo/mkdocs-swagger-plugin) Swagger.
     - [ ] Настроить [gitignore](https://git-scm.com/docs/gitignore).
     - [x] Нарисовать диаграмму в PlantUML.
+    - [ ] Запустить Foliant через docker.
 </if>
 
 ## Используемые инструменты
