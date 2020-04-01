@@ -1,8 +1,36 @@
 version: '3'
 
 services:
-  flnt:
-    build: .
+  site:
+    build:
+      context: .
+      #dockerfile: Dockerfile-site
     volumes:
       - .:/usr/src/app
     working_dir: /usr/src/app
+    command: make site
+  pdf:
+    build:
+      context: .
+      #dockerfile: Dockerfile-pdf
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: make pdf
+
+#services:
+#  flnt-test:
+#    build: .
+#    image: foliant/foliant:full
+#    volumes:
+#      - .:/usr/src/app
+#    working_dir: /usr/src/app
+
+#services:
+#  flnt:
+#    build: .
+#    volumes:
+#      - .:/usr/src/app
+#    working_dir: /usr/src/app
+
+
