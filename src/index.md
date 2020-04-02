@@ -24,7 +24,7 @@
     - [x] Протестировать сниппеты;
     - [ ] Написать про баг с поиском: не учитываются окончания слов.
     - [x] [Интегрировать](https://github.com/allevo/mkdocs-swagger-plugin) Swagger.
-    - [ ] Настроить [gitignore](https://git-scm.com/docs/gitignore).
+    - [x] Настроить [gitignore](https://git-scm.com/docs/gitignore).
     - [x] Нарисовать диаграмму в PlantUML.
     - [ ] Запустить Foliant через docker.
 </if>
