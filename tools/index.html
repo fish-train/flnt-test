@@ -1,0 +1,670 @@
+
+
+
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Копировать в буфер">
+      
+        <meta name="lang:clipboard.copied" content="Скопировано в буфер">
+      
+        <meta name="lang:search.language" content="en, ru">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Совпадений не найдено">
+      
+        <meta name="lang:search.result.one" content="Найдено 1 совпадение">
+      
+        <meta name="lang:search.result.other" content="Найдено # совпадений">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../img/keyboard.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Настройка инструментов - Docs as Code. Учебный проект</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../css/swagger-ui.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#mkdocs" tabindex="0" class="md-skip">
+        Перейти к содержанию
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Docs as Code. Учебный проект" aria-label="Docs as Code. Учебный проект" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">keyboard</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Docs as Code. Учебный проект
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Настройка инструментов
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Начните печатать для поиска
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/fish-train/flnt-test/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    fish-train/flnt-test
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Docs as Code. Учебный проект" class="md-nav__button md-logo">
+      
+        <i class="md-icon">keyboard</i>
+      
+    </a>
+    Docs as Code. Учебный проект
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/fish-train/flnt-test/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    fish-train/flnt-test
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Цели и задачи проекта" class="md-nav__link">
+      Цели и задачи проекта
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../start/" title="Подготовка к работе" class="md-nav__link">
+      Подготовка к работе
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Настройка инструментов
+      </label>
+    
+    <a href="./" title="Настройка инструментов" class="md-nav__link md-nav__link--active">
+      Настройка инструментов
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Содержание</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    MkDocs
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../docs/" title="Разработка текстов" class="md-nav__link">
+      Разработка текстов
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../git/" title="Работа с Git" class="md-nav__link">
+      Работа с Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../publish/" title="Сборка и публикация документации" class="md-nav__link">
+      Сборка и публикация документации
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gost/" title="Создание документов по ГОСТ" class="md-nav__link">
+      Создание документов по ГОСТ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../swagger/" title="Интеграция Swagger с документацией" class="md-nav__link">
+      Интеграция Swagger с документацией
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../uml/" title="UML-диаграммы в PlantUML" class="md-nav__link">
+      UML-диаграммы в PlantUML
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../snippet/" title="Тестирование сниппетов" class="md-nav__link">
+      Тестирование сниппетов
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../if/" title="Использование условий" class="md-nav__link">
+      Использование условий
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../docker/" title="Использование Foliant через Docker" class="md-nav__link">
+      Использование Foliant через Docker
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Содержание</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    MkDocs
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/fish-train/flnt-test/edit/master/src/tools.md" title="Редактировать страницу" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1>Настройка инструментов</h1>
+<p>В разделе описаны текущие настройки инструментов.</p>
+<h2 id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h2>
+<p>Настройки <strong>MkDocs</strong> хранятся в файле foliant.yml:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">mkdocs</span><span class="o">:</span>
+    <span class="n">mkdocs_path</span><span class="o">:</span> <span class="n">mkdocs</span>
+    <span class="n">slug</span><span class="o">:</span> <span class="n">flnt</span><span class="o">-</span><span class="n">test</span>
+    <span class="n">use_title</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="n">use_chapters</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="n">use_headings</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="n">default_subsection_title</span><span class="o">:</span> <span class="n">Expand</span>
+    <span class="n">mkdocs</span><span class="o">.</span><span class="na">yml</span><span class="o">:</span>
+        <span class="n">repo_name</span><span class="o">:</span> <span class="n">fish</span><span class="o">-</span><span class="n">train</span><span class="o">/</span><span class="n">flnt</span><span class="o">-</span><span class="n">test</span>
+        <span class="n">repo_url</span><span class="o">:</span> <span class="n">https</span><span class="o">://</span><span class="n">github</span><span class="o">.</span><span class="na">com</span><span class="sr">/fish-train/</span><span class="n">flnt</span><span class="o">-</span><span class="n">test</span>
+        <span class="n">edit_uri</span><span class="o">:</span> <span class="n">edit</span><span class="sr">/master/src/</span>
+        <span class="n">site_name</span><span class="o">:</span> <span class="n">Docs</span> <span class="k">as</span> <span class="n">Code</span><span class="o">.</span> <span class="err">Учебный</span> <span class="err">проект</span>
+        <span class="n">theme</span><span class="o">:</span>
+            <span class="n">name</span><span class="o">:</span> <span class="s1">&#39;material&#39;</span>
+            <span class="n">logo</span><span class="o">:</span>
+                <span class="n">icon</span><span class="o">:</span> <span class="s1">&#39;keyboard&#39;</span>
+            <span class="n">favicon</span><span class="o">:</span> <span class="n">img</span><span class="o">/</span><span class="n">keyboard</span><span class="o">.</span><span class="na">png</span>
+            <span class="n">language</span><span class="o">:</span> <span class="s1">&#39;ru&#39;</span>
+            <span class="n">palette</span><span class="o">:</span>
+                <span class="n">primary</span><span class="o">:</span> <span class="s1">&#39;indigo&#39;</span>
+                <span class="n">accent</span><span class="o">:</span> <span class="s1">&#39;indigo&#39;</span>
+        <span class="n">extra</span><span class="o">:</span>
+            <span class="n">search</span><span class="o">:</span>
+                <span class="n">language</span><span class="o">:</span> <span class="s1">&#39;en, ru&#39;</span>
+        <span class="n">markdown_extensions</span><span class="o">:</span>
+            <span class="o">-</span> <span class="n">toc</span><span class="o">:</span>
+                <span class="n">toc_depth</span><span class="o">:</span> <span class="s1">&#39;2-6&#39;</span>
+                <span class="n">permalink</span><span class="o">:</span> <span class="kc">true</span>
+            <span class="o">-</span> <span class="n">admonition</span>
+            <span class="o">-</span> <span class="n">codehilite</span>
+            <span class="o">-</span> <span class="n">pymdownx</span><span class="o">.</span><span class="na">tasklist</span><span class="o">:</span>
+                <span class="n">custom_checkbox</span><span class="o">:</span> <span class="kc">true</span>
+            <span class="o">-</span> <span class="n">pymdownx</span><span class="o">.</span><span class="na">details</span>
+</code></pre></div>
+
+
+<p><strong>mkdocs_path</strong>. Путь к файлу mkdocs.exe. По умолчанию путь к исполняемому файлу содержится в переменной окружения <strong>PATH</strong>.</p>
+<p><strong>slug</strong>. Название папки без наименования проекта, в которую локально выгружается сайт. Например, если параметр имеет значение «mkdocs», то имя папки: &lt;название проекта&gt;.mkdocs.</p>
+<p><strong>use_title</strong>. Если параметр имеет значение <strong>true</strong>, то для заголовка сайта используется значение параметра <strong>site_name</strong>. Если <strong>false</strong>, укажите заголовок сайта вручную, иначе MkDocs не сможет создать сайт. Значение по умолчанию <strong>true</strong>. </p>
+<p><strong>use_chapters</strong>. Если параметр имеет значение <strong>true</strong>, то значения <strong>chapters</strong> из foliant.yml используется как значения <strong>pages</strong> в mkdocs.yml.</p>
+<p><strong>use_headings</strong>. </p>
+<p><strong>default_subsection_title</strong>. </p>
+<p><strong>mkdocs.yml</strong>. Параметры из <a href="https://www.mkdocs.org/user-guide/configuration/">mkdocs.yml</a>:</p>
+<ul>
+<li>
+<p><strong>repo_name</strong>. Логин пользователя и название репозитория в Git. Например, <code>fish-train/flnt-test</code>.</p>
+</li>
+<li>
+<p><strong>repo_url</strong>. </p>
+</li>
+<li>
+<p><strong>edit_uri</strong>.</p>
+</li>
+<li>
+<p><strong>site_name</strong>. </p>
+</li>
+<li>
+<p><strong>theme</strong>.</p>
+</li>
+<li>
+<p><strong>name</strong>. </p>
+</li>
+<li>
+<p><strong>logo</strong>. </p>
+<ul>
+<li><strong>icon</strong>. </li>
+</ul>
+</li>
+<li>
+<p><strong>favicon</strong>. </p>
+</li>
+<li>
+<p><strong>language</strong>. </p>
+</li>
+<li>
+<p><strong>palette</strong>. </p>
+<ul>
+<li>
+<p><strong>primary</strong>. </p>
+</li>
+<li>
+<p><strong>accent</strong>. </p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>extra</strong>. </p>
+</li>
+<li>
+<p><strong>search</strong>. </p>
+<ul>
+<li><strong>language</strong>. </li>
+</ul>
+</li>
+<li>
+<p><strong>markdown_extensions</strong>. </p>
+</li>
+<li>
+<p><strong>toc</strong>. </p>
+<ul>
+<li>
+<p><strong>toc_depth</strong>. </p>
+</li>
+<li>
+<p><strong>permalink</strong>. </p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>admonition</strong>. </p>
+</li>
+<li>
+<p><strong>codehilite</strong>. </p>
+</li>
+<li>
+<p><strong>pymdownx.tasklist</strong>. </p>
+<ul>
+<li><strong>custom_checkbox</strong>. </li>
+</ul>
+</li>
+<li>
+<p><strong>pymdownx.details</strong>. </p>
+</li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../start/" title="Подготовка к работе" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Назад
+                </span>
+                Подготовка к работе
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../docs/" title="Разработка текстов" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Вперед
+                </span>
+                Разработка текстов
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.ru.js"></script>
+              
+            
+          
+          
+            <script src="../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+        <script src="../js/swagger-ui-bundle.js"></script>
+      
+        <script src="../js/swagger-ui-standalone-preset.js"></script>
+      
+    
+  </body>
+</html>
