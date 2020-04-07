@@ -5,12 +5,12 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
-    volumes:
-      - ./:/usr/src/app/
+    #volumes:
+    #  - ./:/usr/src/app/
   bash:
     build:
       context: ./
       dockerfile: ./Dockerfile
-    volumes:
-      - ./:/usr/src/app/
+    #volumes:
+    #  - ./:/usr/src/app/
     entrypoint: /bin/bash
