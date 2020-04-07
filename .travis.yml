@@ -1,0 +1,19 @@
+sudo: required
+
+services:
+  - docker
+
+install: ''
+
+script:
+  - docker-compose run --rm foliant make site --with mkdocs
+
+deploy:
+  provider: pages
+  #local-dir: flnt-test.mkdocs
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  verbose: true
+  on:
+    branch: master
