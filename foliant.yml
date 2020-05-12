@@ -61,14 +61,17 @@ backend_config:
             edit_uri: edit/master/src/
             site_name: Docs as Code. Учебный проект
             
-            extra:
-                search:
-                    language: 'en, ru'
+            plugins:
+                - search:
+                    separator: '[\s\-\.]+'
+                    lang:
+                        - ru
+                        - en
             
             theme:
                 name: 'material'
-                logo:
-                    icon: 'keyboard'
+                icon:
+                    logo: material/keyboard
                 favicon: img/keyboard.png
                 language: 'ru'
                 palette:
