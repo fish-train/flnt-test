@@ -42,66 +42,7 @@ mkdocs:
             - pymdownx.details
 ```
 
-**mkdocs_path**. Путь к файлу mkdocs.exe. По умолчанию путь к исполняемому файлу содержится в переменной окружения **PATH**.
+Описание настроек MkDocs:
 
-**slug**. Название папки без наименования проекта, в которую локально выгружается сайт. Например, если параметр имеет значение «mkdocs», то имя папки: <название проекта>.mkdocs.
-
-**use_title**. Если параметр имеет значение **true**, то для заголовка сайта используется значение параметра **site_name**. Если **false**, укажите заголовок сайта вручную, иначе MkDocs не сможет создать сайт. Значение по умолчанию **true**. 
-
-**use_chapters**. Если параметр имеет значение **true**, то значения **chapters** из foliant.yml используется как значения **pages** в mkdocs.yml.
-
-**use_headings**. 
-
-**default_subsection_title**. 
-
-**mkdocs.yml**. Параметры из [mkdocs.yml](https://www.mkdocs.org/user-guide/configuration/):
-
-- **repo_name**. Логин пользователя и название репозитория в Git. Например, `fish-train/flnt-test`.
-
-- **repo_url**. 
-
-- **edit_uri**.
-
-- **site_name**. 
-
-- **theme**.
-
-  - **name**. 
-
-  - **logo**. 
-
-    - **icon**. 
-
-  - **favicon**. 
-
-  - **language**. 
-
-  - **palette**. 
-
-    - **primary**. 
-
-    - **accent**. 
-
-- **extra**. 
-
-  - **search**. 
-
-    - **language**. 
-
-- **markdown_extensions**. 
-
-  - **toc**. 
-
-    - **toc_depth**. 
-
-    - **permalink**. 
-
-  - **admonition**. 
-
-  - **codehilite**. 
-
-  - **pymdownx.tasklist**. 
-
-    - **custom_checkbox**. 
-
-  - **pymdownx.details**. 
+- [Документация Foliant](https://foliant-docs.github.io/docs/backends/mkdocs/)
+- [Документация MkDocs](https://www.mkdocs.org/user-guide/configuration/)
