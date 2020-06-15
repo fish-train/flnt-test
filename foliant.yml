@@ -23,17 +23,6 @@ preprocessors:
     - anchors
 
 backend_config:
-    pandoc:
-        #template: !path docs.tex
-        vars:
-            title: clean-foliant
-            subtitle: Manual
-            logo: img/logo.png
-        params:
-            pdf_engine: xelatex
-            listings: true
-            number_sections: true
-    
     mdtopdf:
         mdtopdf_path: md-to-pdf
         options:
@@ -43,6 +32,18 @@ backend_config:
                 .page-break { page-break-after: always; }
                 .markdown-body { font-size: 11px; }
                 .markdown-body pre > code { white-space: pre-wrap; }
+
+    pandoc:
+        template: !path docs.tex
+        vars:
+            title: clean-foliant
+            subtitle: Manual
+            logo: !path octopus-black-512.png
+            #lang: ru
+        params:
+            pdf_engine: xelatex
+            listings: false
+            number_sections: true
 
     mkdocs:
         mkdocs_path: mkdocs

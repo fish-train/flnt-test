@@ -5,3 +5,7 @@
 /*.mkdocs/
 /*.mkdocs.src/
 /*.log
+/assets/
+/*.zip
+/*.code-workspace
+/flnt-test*.tex

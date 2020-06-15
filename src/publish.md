@@ -61,7 +61,7 @@
 2. Убедитесь, что ваш репозиторий публичный. Если нет, нажмите на кнопку **Make public**.
 3. Перейдите в раздел **GitHub Pages** и в выпадающем списке **Source** выберите ветку **gh-pages branch**.
 
-    ![](img/publishing-source-drop-down.png)
+    ![](../src/img/publishing-source-drop-down.png)
 
 1. Выполните команду:
 
