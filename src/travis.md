@@ -12,17 +12,18 @@ Travis CI позволяет развернуть сайт при изменен
 6. Добавьте файл  .travis.yml в репозиторий:
   
     ```
-    sudo: required
+    language: python
     services:
-      - docker
+    - docker
     install: ''
     script:
-      - docker-compose run --rm foliant make site --with mkdocs
+    - docker-compose run --rm foliant make site --with mkdocs
+
     deploy:
-      provider: pages
+    - provider: pages:git
+      edge: true
+      token: $GITHUB_TOKEN
       local-dir: flnt-test.mkdocs
-      skip-cleanup: true
-      github-token: $GITHUB_TOKEN
       keep-history: true
       verbose: true
       on:
