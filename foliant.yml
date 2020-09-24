@@ -12,6 +12,7 @@ chapters:
   - snippet.md
   - if.md
   - docker.md
+  - travis.md
 
 preprocessors:
     - flags:
