@@ -13,11 +13,11 @@ script:
 deploy:
   - provider: pages:git
     edge: true
-    token: github_token
+    token: Foliant_Travis
     #provider: pages
     local-dir: flnt-test.mkdocs
     #skip-cleanup: true
-    cleanup: true
+    #cleanup: true
     #github-token: $GITHUB_TOKEN
     keep-history: true
     verbose: true
