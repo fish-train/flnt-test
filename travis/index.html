@@ -360,21 +360,23 @@
 <li>Активируйте репозиторий.</li>
 <li>
 <p>Добавьте файл  .travis.yml в репозиторий:</p>
-<p><code>sudo: required
+<p>```
+language: python
 services:
-  - docker
+- docker
 install: ''
 script:
-  - docker-compose run --rm foliant make site --with mkdocs
-deploy:
-  provider: pages
+- docker-compose run --rm foliant make site --with mkdocs</p>
+<p>deploy:
+- provider: pages:git
+  edge: true
+  token: $GITHUB_TOKEN
   local-dir: flnt-test.mkdocs
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
   keep-history: true
   verbose: true
   on:
-    branch: master</code></p>
+    branch: master
+```</p>
 </li>
 <li>
 <p>Чтобы проверить интеграцию, сделайте коммит и выполните команду <code>git push</code>.</p>
