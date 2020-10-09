@@ -9,7 +9,7 @@ Travis CI позволяет развернуть сайт при изменен
 1. Откройте настройки профиля GitHub.
 2. Откройте страницу «Applications».
 3. Добавьте приложение Travis CI по инструкции [Reviewing your authorized integrations](https://docs.github.com/en/github/authenticating-to-github/reviewing-your-authorized-integrations).
-4. Залогиньтесь на сайте [Travis CI](https://travis-ci.org/).
+4. Залогиньтесь на сайте [Travis CI](https://travis-ci.сom/).
 5. Активируйте репозиторий.
 6. Добавьте файл  **.travis.yml** в репозиторий:
   
