@@ -2,7 +2,7 @@
 
 Для создания документов по ГОСТ предназначен набор шаблонов и скриптов **GOSTdown**.
 
-**GOSTdown** создает документы по ГОСТ 19.xxx (ЕСПД) и ГОСТ 7.32 (отчёт о научно-исследовательской работе) в форматах docx из файлов текстовой разметки Markdown.
+**GOSTdown** создает документы по ГОСТ 19.xxx (ЕСПД) и ГОСТ 7.32 (отчёт о научно-исследовательской работе) в формате DOCX из файлов текстовой разметки Markdown.
 
 Подробнее о **GOSTdown** см. в [репозитории](https://gitlab.iaaras.ru/iaaras/gostdown).
 
@@ -17,21 +17,17 @@
 7. Скачайте фильтр **pandoc-crossref** из [репозитория](https://github.com/lierdakil/pandoc-crossref/releases).
 8. Распакуйте архив и поместите файл **pandoc-crossref.exe** в папку с **Pandoc**.
 9. Установите шрифты компании «Паратайп»: [PT Serif, PT Sans и PT Mono](http://rus.paratype.ru/pt-sans-pt-serif).
-10. Убедитесь, что на компьютере установлена систем контроля версий [Git](https://git-scm.com/).
+10. Убедитесь, что на компьютере установлена система контроля версий [Git](https://git-scm.com/).
 11. Запустите **PowerShell** с правами администратора и выполните команду:
 
-    ```
-    set-executionpolicy remotesigned
-    ```
+        set-executionpolicy remotesigned
 
 12. Перейдите в папку, в которую необходимо установить **GOSTdown**, и склонируйте [репозиторий](https://gitlab.iaaras.ru/iaaras/gostdown):
 
-    ```
-    git clone https://gitlab.iaaras.ru/iaaras/gostdown.git
-    ```
+        git clone https://gitlab.iaaras.ru/iaaras/gostdown.git
 
 13. Запустите **build-demo-report.bat** и **build-demo-espd.bat**.
-14. Убедитесь, что скрипты 
+14. Убедитесь, что скрипты успешно выполнились.
 
 ## Создание документов
 
@@ -40,7 +36,7 @@
 1. Скопируйте разработанные MD-файлы в папку с **GOSTdown**.
 2. Отредактируйте файлы:
 
-    - **demo-template-espd.docx** - шаблон документа, который содержит титульный лист;
+    - **demo-template-espd.docx** – шаблон документа, который содержит титульный лист;
     - **demo-espd-beginning.md** – первая часть документа, которая содержит аннотацию и содержание;
     - **demo-espd-end.md** – последняя часть документа, которая содержит приложения, обозначения и сокращения, список использованных источников.
 
@@ -50,21 +46,17 @@
     2. Укажите шаблон. По умолчанию используется файл **demo-template-espd.docx**.
     3. Укажите названия итоговых DOCX- и PDF-файлов.
     4. Чтобы внедрить шрифты в итоговые файлы файл, укажите параметр **embedfonts**.
-    
+
         Пример файла:
 
-        ```
-        powershell.exe -command .\build.ps1 ^
-        -md demo-espd-beginning.md,index.md,start.md,docs.md,git.md,publish.md,demo-espd-end.md ^
-        -template demo-template-espd.docx ^
-        -docx test.docx ^
-        -pdf test.pdf ^
-        -embedfonts
-        ```
+            powershell.exe -command .\build.ps1 ^
+            -md demo-espd-beginning.md,index.md,start.md,docs.md,git.md,publish.md,demo-espd-end.md ^
+            -template demo-template-espd.docx ^
+            -docx test.docx ^
+            -pdf test.pdf ^
+            -embedfonts
 
-4. Чтобы включить cdrdjpye. нумерацию рисунков и таблиц, в файле **demo-espd-beginning.md** удалите `chapters: true` из заголовка файла.
+4. Чтобы включить автоматическую нумерацию рисунков и таблиц, в файле **demo-espd-beginning.md** удалите `chapters: true` из заголовка файла.
 5. Запустите **PowerShell** с правами администратора и запустите **build-demo-espd.bat**:
 
-    ```
-    .\build-demo-espd.bat
-    ```
+        .\build-demo-espd.bat

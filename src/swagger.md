@@ -2,21 +2,19 @@
 
 Чтобы интегрировать Swagger со своим проектом:
 
-1. Создайте описание API в [Swagger Editor](https://editor.swagger.io/) и сохраните YAML-файл. Например, под названием openapi_3.0.2.yaml.
+1. Создайте описание API в [Swagger Editor](https://editor.swagger.io/) и сохраните YAML-файл. Например, под названием **openapi_3.0.2.yaml**.
 2. Перейдите в [репозиторий Swagger UI](https://github.com/swagger-api/swagger-ui) и нажмите на кнопку **Clone or download**.
 3. Нажмите на кнопку **Download ZIP**.
 4. Распакуйте архив и перейдите в папку `dist`.
-5. Из папки `dist` скопируйте файл swagger-ui.css и вставьте его в папку `css` проекта.
-6. Из папки `dist` скопируйте файлы swagger-ui-bundle.js и swagger-ui-standalone-preset.js и вставьте их в папку `js` проекта.
-7. В файл foliant.yml добавьте настройки mkdocs:
+5. Из папки `dist` скопируйте файл **swagger-ui.css** и вставьте его в папку `css` проекта.
+6. Из папки `dist` скопируйте файлы **swagger-ui-bundle.js** и **swagger-ui-standalone-preset.js** и вставьте их в папку `js` проекта.
+7. В файл **foliant.yml** добавьте настройки mkdocs:
 
-    ```
-    extra_css:
-        - css/swagger-ui.css
-    extra_javascript:
-        - js/swagger-ui-bundle.js
-        - js/swagger-ui-standalone-preset.js
-    ```
+        extra_css:
+          - css/swagger-ui.css
+        extra_javascript:
+          - js/swagger-ui-bundle.js
+          - js/swagger-ui-standalone-preset.js
 
 8. Скопируйте YAML-файл с описанием API в папку проекта.
 9. Создайте MD-файл и вставьте в него код:

@@ -2,7 +2,7 @@
 
 ## Markdown
 
-Для разработки документации используется язык разметки Markdown.
+Документация разрабатывается на языке разметки Markdown.
 
 Подробнее о синтаксисе см. статьи:
 
@@ -22,7 +22,7 @@
 Полезные ссылки:
 
 - [Официальная документация](https://code.visualstudio.com/docs);
-- [Вебинар "Настройте Visual Studio Code под свои предпочтения"](https://gitlab.com/svetlnovikova/webinar/-/blob/master/post-webinar-materials.md);
+- [Вебинар "Настройте Visual Studio Code под свои предпочтения"](https://gitlab.com/svetlnovikova/webinar/-/blob/master/post-webinar-materials.md).
 
 ### Плагины
 
@@ -56,13 +56,13 @@
 #### Для Git
 
 - [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github). Управляет ревью и пулл реквестами;
-- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). Визуализирует изменение в коде.
+- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). Визуализирует изменения в коде.
 
 #### Остальные
 
 - [colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize). Визуализирует CSS-цвета;
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker). Проверяет орфографию;
-- [Russian - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-russian). Словарь русского языка для проврки орфографии;
+- [Russian - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-russian). Словарь русского языка для проверки орфографии;
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker);
 - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio);
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop). Поддержка работы с LaTeX;

@@ -11,9 +11,7 @@ Docker – это технология создания контейнеров �
 3. Убедитесь, что в BIOS включена виртуализация.
 4. Запустите **Docker Quickstart Terminal** и выполните команду:
 
-    ```powershell
-    docker run hello-world
-    ```
+        docker run hello-world
 
 ## Установка Foliant через Docker
 
@@ -25,44 +23,48 @@ docker pull foliant/foliant:full
 
 ## Запуск Foliant через Docker
 
-1. Заполнить dockerfile:
+1. Заполните **dockerfile**:
 
-    ```
-    FROM foliant/foliant:full
-    COPY requirements.txt .
-    RUN pip3 install -r requirements.txt
-    COPY ./ /usr/src/app/
-    ```
+        FROM foliant/foliant:full
+        COPY requirements.txt .
+        RUN pip3 install -r requirements.txt
+        COPY ./ /usr/src/app/
 
-2. Заполнить docker-compose.yaml:
+2. Заполните **docker-compose.yaml**:
 
-    ```
-    version: '3'
-    services:
-      foliant:
-        build:
-          context: ./
-          dockerfile: ./Dockerfile
-      bash:
-        build:
-          context: ./
-          dockerfile: ./Dockerfile
-        entrypoint: /bin/bash
-    ```
+        version: '3'
+        services:
+          foliant:
+            build:
+              context: ./
+              dockerfile: ./Dockerfile
+          bash:
+            build:
+              context: ./
+              dockerfile: ./Dockerfile
+            entrypoint: /bin/bash
 
-3. Собрать образ: `docker-compose build`.
+3. Соберите образ:
 
-4. Создать сайт: `docker-compose run --rm foliant make site --with mkdocs`.
+        docker-compose build
 
-5. Посмотреть ИД последнего контейнера: `docker ps -a`.
+4. Создайте сайт:
 
-6. Скопировать папку с сайтом из контейнера: `docker cp <ИД контейнера>:flnt-test.mkdocs \<Папка на локальном компьютере>`.
+        docker-compose run --rm foliant make site --with mkdocs
+
+5. Посмотрите ИД последнего контейнера:
+
+        docker ps -a
+
+6. Скопируйте папку с сайтом из контейнера:
+
+        docker cp <ИД контейнера>:flnt-test.mkdocs \<Папка на локальном компьютере>
 
 ## Команды Docker
 
 ### Посмотреть образы
 
-```powershell
+```
 docker images
 ```
 

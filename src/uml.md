@@ -15,7 +15,7 @@
 
 Подробнее об использовании PlantUML в Foliant см. статью [Plantuml](https://foliant-docs.github.io/docs/preprocessors/plantuml/#usage).
 
-Настройки отображения диаграмм см. в 
+Настройки отображения диаграмм см. в
 
 ## Примеры диаграмм
 

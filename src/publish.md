@@ -12,16 +12,12 @@
 
 2. Установите шаблон. Например, шаблон **Materials**:
 
-    ```
-    pip install mkdocs-material
-    ```
+        pip install mkdocs-material
 
 3. Откройте конфигурационный файл **foliant.yml** и добавьте строки:
 
-    ```
-    theme:  
-      name: 'material'   
-    ```
+        theme:
+          name: 'material'
 
 Шаблон настраивается в файле **foliant.yml**. Описание параметров см. в документации для конкретного шаблона. Например, для шаблона **Materials** см. статью [Getting Started](https://squidfunk.github.io/mkdocs-material/getting-started/#configuration).
 
@@ -31,25 +27,19 @@
 
 Чтобы локально собрать сайт:
 
-1. Выполните команду: 
+1. Выполните команду:
 
-     ```
-     foliant make site --with mkdocs
-     ```
+        foliant make site --with mkdocs
 
     В папке проекта создается папка "<Название проекта>.mkdocs".
 
-2. Перейдите в папку с сайтом: 
-    
-    ```
-    cd flnt-test.mkdocs
-    ```
+2. Перейдите в папку с сайтом:
+
+        cd flnt-test.mkdocs
 
 3. Запустите веб-сервер:
-    
-    ```
-    python -m http.server
-    ```
+
+        python -m http.server
 
 4. В браузере откройте страницу: <http://localhost:8000/>.
 
@@ -61,13 +51,11 @@
 2. Убедитесь, что ваш репозиторий публичный. Если нет, нажмите на кнопку **Make public**.
 3. Перейдите в раздел **GitHub Pages** и в выпадающем списке **Source** выберите ветку **gh-pages branch**.
 
-    ![](../src/img/publishing-source-drop-down.png)
+    ![Source](../src/img/publishing-source-drop-down.png)
 
-1. Выполните команду:
+4. Выполните команду:
 
-   ```
-   foliant make ghp -p \my-project
-   ```
+        foliant make ghp -p \my-project
 
 ## PDF
 
@@ -77,7 +65,7 @@
 
 Чтобы создать PDF-файл, выполните команду:
 
-```
+```bash
 foliant make pdf --with mdtopdf
 ```
 
@@ -86,7 +74,8 @@ foliant make pdf --with mdtopdf
 [Pandoc](https://pandoc.org/) — универсальная утилита для работы с текстовыми форматами.
 
 Чтобы создать PDF-файл, выполните команду:
-```
+
+```bash
 foliant make pdf -p \my-project --with pandoc
 ```
 
@@ -96,6 +85,6 @@ DOCX-файлы создаются с помощью Pandoc.
 
 Чтобы создать DOCX-файл, выполните команду:
 
-```
+```bash
 foliant make docx -p my-project
 ```
