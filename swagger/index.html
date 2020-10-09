@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="ru" class="no-js">
   <head>
@@ -12,7 +9,7 @@
       
       
       <link rel="shortcut icon" href="../img/keyboard.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
     
     
       
@@ -20,19 +17,21 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.d3202873.min.css">
-      
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
       
         
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
         
-        <meta name="theme-color" content="#000000">
+          
+          
+          <meta name="theme-color" content="#000000">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,9 +51,11 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="indigo">
-  
     
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="indigo">
+      
+  
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -145,8 +146,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -189,7 +188,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Цели и задачи проекта" class="md-nav__link">
+    <a href=".." class="md-nav__link">
       Цели и задачи проекта
     </a>
   </li>
@@ -201,7 +200,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../start/" title="Подготовка к работе" class="md-nav__link">
+    <a href="../start/" class="md-nav__link">
       Подготовка к работе
     </a>
   </li>
@@ -213,7 +212,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tools/" title="Настройка инструментов" class="md-nav__link">
+    <a href="../tools/" class="md-nav__link">
       Настройка инструментов
     </a>
   </li>
@@ -225,7 +224,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../docs/" title="Разработка текстов" class="md-nav__link">
+    <a href="../docs/" class="md-nav__link">
       Разработка текстов
     </a>
   </li>
@@ -237,7 +236,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../git/" title="Работа с Git" class="md-nav__link">
+    <a href="../git/" class="md-nav__link">
       Работа с Git
     </a>
   </li>
@@ -249,7 +248,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../publish/" title="Сборка и публикация документации" class="md-nav__link">
+    <a href="../publish/" class="md-nav__link">
       Сборка и публикация документации
     </a>
   </li>
@@ -261,7 +260,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../gost/" title="Создание документов по ГОСТ" class="md-nav__link">
+    <a href="../gost/" class="md-nav__link">
       Создание документов по ГОСТ
     </a>
   </li>
@@ -284,7 +283,7 @@
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Интеграция Swagger с документацией" class="md-nav__link md-nav__link--active">
+    <a href="./" class="md-nav__link md-nav__link--active">
       Интеграция Swagger с документацией
     </a>
     
@@ -319,7 +318,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../snippet/" title="Тестирование сниппетов" class="md-nav__link">
+    <a href="../snippet/" class="md-nav__link">
       Тестирование сниппетов
     </a>
   </li>
@@ -331,7 +330,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../if/" title="Использование условий" class="md-nav__link">
+    <a href="../if/" class="md-nav__link">
       Использование условий
     </a>
   </li>
@@ -343,7 +342,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../docker/" title="Использование Foliant через Docker" class="md-nav__link">
+    <a href="../docker/" class="md-nav__link">
       Использование Foliant через Docker
     </a>
   </li>
@@ -355,7 +354,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../travis/" title="Интеграция с Travis CI" class="md-nav__link">
+    <a href="../travis/" class="md-nav__link">
       Интеграция с Travis CI
     </a>
   </li>
@@ -406,32 +405,31 @@
                   </a>
                 
                 
-                  
-                
-                
                 <h1>Интеграция Swagger с документацией</h1>
 <p>Чтобы интегрировать Swagger со своим проектом:</p>
 <ol>
-<li>Создайте описание API в <a href="https://editor.swagger.io/">Swagger Editor</a> и сохраните YAML-файл. Например, под названием openapi_3.0.2.yaml.</li>
+<li>Создайте описание API в <a href="https://editor.swagger.io/">Swagger Editor</a> и сохраните YAML-файл. Например, под названием <strong>openapi_3.0.2.yaml</strong>.</li>
 <li>Перейдите в <a href="https://github.com/swagger-api/swagger-ui">репозиторий Swagger UI</a> и нажмите на кнопку <strong>Clone or download</strong>.</li>
 <li>Нажмите на кнопку <strong>Download ZIP</strong>.</li>
 <li>Распакуйте архив и перейдите в папку <code>dist</code>.</li>
-<li>Из папки <code>dist</code> скопируйте файл swagger-ui.css и вставьте его в папку <code>css</code> проекта.</li>
-<li>Из папки <code>dist</code> скопируйте файлы swagger-ui-bundle.js и swagger-ui-standalone-preset.js и вставьте их в папку <code>js</code> проекта.</li>
+<li>Из папки <code>dist</code> скопируйте файл <strong>swagger-ui.css</strong> и вставьте его в папку <code>css</code> проекта.</li>
+<li>Из папки <code>dist</code> скопируйте файлы <strong>swagger-ui-bundle.js</strong> и <strong>swagger-ui-standalone-preset.js</strong> и вставьте их в папку <code>js</code> проекта.</li>
 <li>
-<p>В файл foliant.yml добавьте настройки mkdocs:</p>
-<p><code>extra_css:
-    - css/swagger-ui.css
-extra_javascript:
-    - js/swagger-ui-bundle.js
-    - js/swagger-ui-standalone-preset.js</code></p>
+<p>В файл <strong>foliant.yml</strong> добавьте настройки mkdocs:</p>
+<div class="codehilite"><pre><span></span><code><span class="c">extra_css:</span>
+<span class="c">  - css/swagger-ui.css</span>
+<span class="c">extra_javascript:</span>
+<span class="c">  - js/swagger-ui-bundle.js</span>
+<span class="c">  - js/swagger-ui-standalone-preset.js</span>
+</code></pre></div>
+
 </li>
 <li>
 <p>Скопируйте YAML-файл с описанием API в папку проекта.</p>
 </li>
 <li>Создайте MD-файл и вставьте в него код:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/swagger-ui.css&quot;</span> <span class="p">&gt;</span>
+<div class="html codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/swagger-ui.css&quot;</span> <span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
   <span class="nt">html</span>
   <span class="p">{</span>
@@ -650,9 +648,8 @@ extra_javascript:
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 </code></pre></div>
 
-
 <h2 id="api">Пример описания API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
-<p><link rel="stylesheet" type="text/css" href="css/swagger-ui.css" >
+<p><link rel="stylesheet" type="text/css" href="css/swagger-ui.css" ></p>
 <style>
   html
   {
@@ -660,8 +657,8 @@ extra_javascript:
     overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
   }
-  <em>,
-  </em>:before,
+  *,
+  *:before,
   *:after
   {
     box-sizing: inherit;
@@ -670,13 +667,12 @@ extra_javascript:
     margin:0;
     background: #fafafa;
   }
-</style></p>
+</style>
+
 <div id="swagger-ui"></div>
 
 <script src="js/swagger-ui-bundle.js"> </script>
-
 <script src="js/swagger-ui-standalone-preset.js"> </script>
-
 <script>
 window.onload = function() {
   // Build a system
@@ -888,7 +884,7 @@ button.btn.try-out__btn {
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../gost/" title="Создание документов по ГОСТ" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../gost/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -903,7 +899,7 @@ button.btn.try-out__btn {
           </a>
         
         
-          <a href="../snippet/" title="Тестирование сниппетов" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../snippet/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
@@ -936,15 +932,15 @@ button.btn.try-out__btn {
       
     </div>
     
-      <script src="../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439"}</script>
+      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
