@@ -21,6 +21,7 @@ def make_site():
 
 make_site()																	# Собрать сайт
 
+time.sleep(5)
 dirname = 'D:/flnt-test'													# Указать рабочую папку
 delete_log(dirname)															# Удалить лог-файл предыдущей сборки
 
